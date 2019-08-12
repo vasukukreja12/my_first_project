@@ -71,15 +71,7 @@ vector<string> checkVertical(int x, int y,
 	return matrix;
 }
 
-// this function recursively checks for every
-// word that can align vertically in one loop
-// and in another loop it checks for those words
-// that can align horizontally words -> it
-// contains all the words to fill in a crossword
-// puzzle matrix -> it contain the current
-// state of crossword index -> it represent
-// the index of current word n -> it represent
-// the length of row or column of the square matrix
+
 void solvePuzzle(vector<string>& words,
 				vector<string> matrix,
 				int index, int n)
@@ -152,10 +144,10 @@ int main()
 
 	// the words matrix will hold all
 	// the words need to be filled in the grid
-	words.push_back("PUNJAB");
-	words.push_back("JHARKHAND");
-	words.push_back("MIZORAM");
-	words.push_back("MUMBAI");
+	words.push_back("HORIZONTAL");
+	words.push_back("VERTICAL");
+	words.push_back("DIAGONAL");
+	words.push_back("REVERSE");
 
 	// initialize the number of ways
 	// to solve the puzzle to zero
